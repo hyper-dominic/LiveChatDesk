@@ -1,22 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 13442403;
-  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)};
-  var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){
-  i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},
-  get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");
-  return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){
-  var n=t.createElement("script");
-  n.async=!0,n.type="text/javascript",
-  n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};
-  !n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/13442403/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
-  </body>
+<html style="background-color: #f0f0f0;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tawk to Chill&amp;Earn</title>
+<link rel="shortcut icon" href="https://tawk.to/public/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://tawk.to/public/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://tawk.to/public/style/compact.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+			.company-link {
+				color : #046d51;
+			}
+		</style>
+<script type="text/javascript" src="https://tawk.to/public/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://tawk.to/public/scripts/page.js"></script>
+
+<script type="text/javascript">
+
+			var Tawk_API = {
+				onLoad: function(){
+					var dataObj = parseQueryString();
+
+					if (dataObj.tags !== undefined) {
+						Tawk_API.addTags(dataObj.tags);
+					}
+
+					if (dataObj.event !== undefined) {
+						if (dataObj.attrLength !== 0) {
+							Tawk_API.addEvent(dataObj.event, dataObj.attributes);
+						} else {
+							Tawk_API.addEvent(dataObj.event);
+						}
+					};
+
+					$('#tawk-maximize').click(function(){
+						Tawk_API.maximize();
+					});
+
+					$('#status').parent().prepend('<i class="fa fa-circle"></i>');
+				},
+				onStatusChange: function(status){
+					$('#status').text(status)
+					.parent()
+					.removeClass('online offline away')
+					.addClass(status);
+
+					if (status === 'online') {
+						$('.status').show();
+					} else {
+						$('.status').hide();
+					}
+				}
+			};
+			var Tawk_LoadStart = new Date();
+			(function(){
+				var s1 = document.createElement("script"),
+					s0 = document.getElementsByTagName("script")[0];
+
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/61e0fef0f7cf527e84d21181/1fpbe7oi3';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin','*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+
+			function faviconError(el) {
+				$(el).hide();
+				$(el).next().show();
+			}
+		</script>
+
+</head>
+<body style="background-color: #f0f0f0;">
+<div class="theme-1 container">
+<div class="main-container">
+<div class="header-info">
+<img class="avatar" src="https://tawk.link/thumb/61e0fef0f7cf527e84d21181/var/page-images/cDK-TgCxo_.png?width=95&height=95" onerror="this.onerror=null;this.src='https://tawk.to/public/images/default-image.svg';" alt="Chill&amp;Earn" title="Chill&amp;Earn">
+<div class="header-content-wrapper">
+<div class="name wrap">
+<span class="page-name">Chill&amp;Earn</span>
+</div>
+<div class="slogan-container">
+<div class="slogan"><i>Let&#x27;s Earn Together 🤠</i></div>
+</div>
+<div class="status">
+<span id="status"></span>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="position"><span class="feather-icon icon-briefcase"></span><div class="text">Dominic&#39;s Dev</div></div>
+<div class="buttons">
+<button id="tawk-maximize" style="background-color: #046d51;color: #fff; border-color: #046d51" class="btn btn-primary"><i class="fa fa-comment"></i> Start Live Chat</button>
+</div>
+<p class="summary">24/7 Support🙂</p>
+<p class="description">Contact Us Regarding any coin ,bug or giveaway related issue</p>
+<div class="links">
+</div>
+</div>
+</div>
+<div class="report"></div>
+</div>
+
+<div id="report-user" style="display: none;">
+<div class="report-container" style="display: none;">
+<div class="report-header">
+<img src="https://tawk.to/public/images/warning.png" alt="warning">
+<p>Report Chill&amp;Earn</p>
+<img class="close-modal" src="https://tawk.to/public/images/close.png" alt="Close Modal" title="close">
+</div>
+<div class="report-body">
+<p>Submit a report</p>
+<span>Let us know about the abuse on tawk.to and keep this a safe place for everyone.</span>
+<textarea id="report-reason" placeholder="Explain why you're reporting Chill&amp;Earn"></textarea>
+<input type="hidden" value="chillearnlivechat" id="report-tawk-id" />
+<input type="hidden" value="61e0fef0f7cf527e84d21181" id="report-property-id" />
+<br />
+<label class="error"></label>
+</div>
+<div class="submit-report" id="action-container">
+<a href='javascript:void(0);' class='cancel-report'>Cancel Report</a> or
+<input type="submit" value="Submit" id="submit-report">
+</div>
+<div class="submit-report" id="submitting-container" style="display: none">
+<span id="submitting-message">Submitting</span>
+<span id="report-submit-loader"></span>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+</div>
+</body>
 </html>
